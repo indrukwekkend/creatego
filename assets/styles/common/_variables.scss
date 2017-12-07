@@ -1,3 +1,160 @@
+// Global options
+$enable-rounded:    false;
+$enable-shadows:    false;
+$enable-gradients:    true;
+
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
+
+// Grid columns
+$grid-columns:               12;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 6),
+  7: ($spacer * 12),
+);
+
+// Color system
+$white:  #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:  #000;
+
+$grays: (
+  100: $gray-100,
+  200: $gray-200,
+  300: $gray-300,
+  400: $gray-400,
+  500: $gray-500,
+  600: $gray-600,
+  700: $gray-700,
+  800: $gray-800,
+  900: $gray-900
+);
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+);
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
+$body-bg:       $white;
+$body-color:    $gray-900;
+
+$link-color:            theme-color("primary");
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+$font-family-sans-serif: "Montserrat Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-base:         1rem;
+$font-weight-bold:       normal;
+$line-height-base:       1.8;
+
+$h1-font-size:           3.6rem;
+$h2-font-size:           3.4rem;
+$h3-font-size:           3.2rem;
+$h4-font-size:           2.8rem;
+$h5-font-size:           2rem;
+$h6-font-size:           1.75rem;
+
+$heading-scale-xs:      .63;
+$heading-scale-sm:      .72;
+$heading-scale-md:      .8;
+$heading-scale-lg:      .92;
+
+$headings-font-family:   "Montserrat Bold";
+$headings-font-weight:   normal;
+$headings-line-height:   1.1;
+
+$input-btn-padding-y:       1.3rem;
+$input-btn-padding-x:       2.8rem;
+$input-btn-line-height:     1.25;
+$btn-focus-box-shadow:      none !important;
+$btn-transition:            all 0s linear;
+
+$input-btn-padding-y-sm:    1rem;
+$input-btn-padding-x-sm:    2rem;
+$input-btn-line-height-sm:  1.5;
+
+$input-btn-padding-y-lg:    1.3rem;
+$input-btn-padding-x-lg:    2.8rem;
+$input-btn-line-height-lg:  1.5;
+
+$input-btn-padding-y-lg-xs:    .8rem;
+$input-btn-padding-x-lg-xs:    1.1rem;
+
+$input-btn-padding-y-lg-md:    1rem;
+$input-btn-padding-x-lg-md:    1.3rem;
+
+//Jumbotron
+
+$jumbotron-padding:              2rem;
+$jumbotron-bg:                   $gray-200;
+
+// Cards
+
+$card-spacer-y:            .75rem;
+$card-spacer-x:            1.25rem;
+$card-border-width:        1px;
+$card-border-radius:       $border-radius;
+$card-border-color:        rgba($black,.125);
+$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width});
+$card-cap-bg:              rgba($black, .03);
+$card-bg:                  $white;
+
+$card-img-overlay-padding: 1.25rem;
+
+$card-deck-margin:          ($grid-gutter-width / 2);
+
+$card-columns-count:        3;
+$card-columns-gap:          1.25rem;
+$card-columns-margin:       $card-spacer-y;
