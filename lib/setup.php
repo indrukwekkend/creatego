@@ -125,6 +125,13 @@ function register_required_plugins() {
             'force_activation'   => true,
             'force_deactivation' => true,
         ),
+        array(
+            'name'               => 'Advanced Custom Fields: Post2Post Addon',
+            'slug'               => 'post-2-post-for-acf',
+            'required'           => true,
+            'force_activation'   => true,
+            'force_deactivation' => true,
+        ),
     );
 
     $config = array(
@@ -152,3 +159,15 @@ function acf_google_maps_key() {
 
 }
 add_action('acf/init', __NAMESPACE__ . '\\acf_google_maps_key');
+
+/*
+ * Add bootstrap .form-group to Gravity Forms
+ */
+function add_bootstrap_container_class( $field_container, $field, $form, $css_class, $style, $field_content ) {
+
+	$id = $field->id;
+  $field_id = is_admin() || empty( $form ) ? "field_{$id}" : 'field_' . $form['id'] . "_$id";
+
+	return '<li id="' . $field_id . '" class="' . $css_class . ' form-group">{FIELD_CONTENT}</li>';
+}
+add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
