@@ -142,14 +142,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "template-jumbotron.php"
+                "value": "template-landingspage.php"
             }
         ]
     ],
@@ -161,5 +156,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1511774402
+    "modified": 1513684046
 }
