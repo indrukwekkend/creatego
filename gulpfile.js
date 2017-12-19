@@ -19,8 +19,7 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
-var loadplugins  = require('gulp-load-plugins');
-var bump         = require('gulp-bump');
+var loadplugins  = require('gulp-load-plugins')();
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
