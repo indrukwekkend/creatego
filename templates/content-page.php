@@ -33,5 +33,9 @@
 			<?php get_template_part('templates/sections/maps'); ?>
 		<?php endif;?>
 
+		<?php if( get_row_layout() == 'section_forms' ): ?>
+			<?php get_template_part('templates/sections/gravityforms'); ?>
+		<?php endif;?>
+
 	<?php endwhile;?>
 <?php endif;?>
