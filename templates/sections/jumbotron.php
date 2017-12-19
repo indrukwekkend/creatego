@@ -22,7 +22,7 @@ $jumbotron = get_field('jumbotron');
 
 	<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
 
-    <div class="container-fluid">
+    <div class="container">
 
   		<div class="row py-5">
 
