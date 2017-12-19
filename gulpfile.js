@@ -324,7 +324,8 @@ return gulp.src([
    '*.css',
    '*.md',
    '*.php',
-   '*.txt'
+   '*.txt',
+   '*.png',
 ], {
  base: '.'
 })
