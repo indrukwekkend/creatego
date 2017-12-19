@@ -29,11 +29,10 @@
 			</div>
 		</div>
 	</nav>
-
-	<?php if( is_front_page() or has_post_thumbnail() or is_page_template('template-jumbotron.php') ) : ?>
-
-		<?php get_template_part('templates/sections/jumbotron'); ?>
-
-	<?php endif;?>
-
 </header>
+
+<?php if( is_front_page() or is_page_template('template-landingspage.php') ) : ?>
+
+  <?php get_template_part('templates/sections/jumbotron'); ?>
+
+<?php endif;?>
