@@ -11,24 +11,19 @@ Zie de releases tab voor versies die gereed zijn voor productie.
 Zorg ervoor dat AMPPS een domein heeft draaien op `creatego.dev`.
 Dit is nodig omdat `gulp` is ingesteld op `http://creatego.dev/`. Verander je dit dan sloop je het voor andere contributors van dit project.
 
-Zorg ervoor dat het domein op AMPPS  WordPress 4.8 of hoger heeft geinstalleerd.
+Zorg ervoor dat het domein op AMPPS  WordPress 4.9 of hoger heeft geinstalleerd.
 
-Ga naar de map van het project (normaal: `/AMPPS-ROOT/www/creatego.dev/wp-content/themes/creatego`)
-
-In deze map voer je de volgende commandos uit:
-
-1. `npm install`
-2. `bower install`
-3. `gulp`
-4. `gulp watch`
+Ga naar de map van het project (normaal: `/AMPPS-ROOT/www/creatego.dev/wp-content/themes/creatego`) en voer `sh start` uit.
+Deze voert `npm install`, `composer install`, `bower install`, `gulp` en `gulp watch` uit.
 
 Nu start je browser op `localhost:3000` welke gelinkt is op `http://creatego.dev`.
 
-### Vereisten 
+### Vereisten
 
 #### Systeem
  * AMPPS 3.6 of hoger
  * PHP 7 of hoger
+ * WordPress 4.9 of hoger
 
 #### Plugins
 * [Advanced Custom Fields / ACF](https://www.advancedcustomfields.com/)
@@ -38,5 +33,5 @@ Nu start je browser op `localhost:3000` welke gelinkt is op `http://creatego.dev
 ### Ontwikkelaars Info
 
 Dit thema gebruikt:
- - Roots/Sage 8.5.3 
+ - Roots/Sage 8.5.3
  - Bootstrap 4.0.0-beta
