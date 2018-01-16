@@ -42,9 +42,6 @@ add_action( 'after_setup_theme', function() {
       array(
         'name'               => 'Post Types Order',
         'slug'               => 'post-types-order',
-        'required'           => true,
-        'force_activation'   => true,
-        'force_deactivation' => true,
       ),
     );
 
