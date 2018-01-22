@@ -1,19 +1,23 @@
-<section class="display">
+<section id="<?= strtolower( str_replace( ' ','-', get_sub_field('title') ) ); ?>" class="display">
 
-	<div class="row py-3 text-center">
+  <div class="container">
 
-		<div class="col-12">
+    <div class="row py-4 text-center">
 
-			<h1 class="<?php the_sub_field('display_type'); ?>">
-				<?php the_sub_field('title'); ?>
-			</h1>
+      <div class="col-12">
 
-			<p class="lead">
-				<?php the_sub_field('lead'); ?>
-			</p>
+        <h1 class="mb-3 <?php the_sub_field('type'); ?>">
+          <?php the_sub_field('title'); ?>
+        </h1>
 
-		</div>
+        <p class="lead">
+          <?php the_sub_field('lead'); ?>
+        </p>
 
-	</div>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>

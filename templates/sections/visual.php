@@ -1,29 +1,22 @@
-<?php
+<?php if( get_sub_field('toggle') == "full" ): ?>
 
-$image = get_sub_field('image');
-$size = 'large';
-$thumb = $image['sizes'][ $size ];
+  <section class="visual container-fluid" style="background-image:url(<?php the_sub_field('image'); ?>);background-size:cover;background-position:center; min-height:480px; ">
+  </section>
 
-// Voorlopig overbodig
-// $width = $image['sizes'][ $size . '-width' ];
-// $height = $image['sizes'][ $size . '-height' ];
-// $title = $image['title'];
-// $alt = $image['alt'];
+<?php else: ?>
 
-$background = 'style="background-image:url('.$thumb.');"';
+  <section class="visual container">
 
-?>
+    <div class="row py-3">
 
-<section class="visual" <?= $background; ?>>
+      <div class="col-12 text-center">
 
-	<div class="row">
+        <img class="img-fluid" src="<?php the_sub_field('image'); ?>"/>
 
-		<div class="col-12">
+      </div>
 
-			<!-- Hier kan eventueel nog content komen -->
+    </div>
 
-		</div>
+  </section>
 
-	</div>
-
-</section>
+<?php endif; ?>
